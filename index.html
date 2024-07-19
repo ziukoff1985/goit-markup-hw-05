@@ -555,7 +555,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
+          <div class="modal-field modal-text-area">
             <label for="user-text" class="modal-label">Comment</label>
             <textarea
               name="user-text"
@@ -564,7 +564,23 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms"
+              value="true"
+              class="modal-check visually-hidden"
+            />
+            <label for="terms" class="modal-label modal-check-text"
+              ><span
+                ><svg class="" width="10" height="8">
+                  <use href="./images/icons.svg#icon-hw-05-check"></use></svg
+              ></span>
+              I accept the terms and conditions of the Privacy Policy</label
+            >
+          </div>
+          <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
     </div>
