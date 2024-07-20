@@ -582,7 +582,7 @@ a {
 }
 
 .close-button:hover .close-icon,
-.close-button:hover .close-icon {
+.close-button:focus .close-icon {
   fill: #ffffff;
 }
 
@@ -704,7 +704,6 @@ a {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: inline-flex;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -716,7 +715,7 @@ a {
 .modal-check:checked + .modal-check-text .fake-checkbox {
   background-color: #404bbf;
   border: none;
-  border: 1px solid #404bbf;
+  /* border: 1px solid #404bbf; */
   fill: #f4f4fd;
 }
 
