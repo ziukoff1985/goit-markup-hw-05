@@ -576,14 +576,14 @@ a {
   background-color: #404bbf;
 }
 
-.close-button:hover .close-icon,
-.close-button:hover .close-icon {
-  fill: #ffffff;
-}
-
 .close-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover .close-icon,
+.close-button:hover .close-icon {
+  fill: #ffffff;
 }
 
 .modal-title {
@@ -683,10 +683,14 @@ a {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-field-checkbox {
+  margin-bottom: 24px;
+}
+
 .modal-check-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -707,8 +711,6 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-check:checked + .modal-check-text .fake-checkbox {
@@ -728,9 +730,8 @@ a {
 .modal-button {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* margin-top: 24px; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   font-family: inherit;
   font-weight: 500;
